@@ -1,3 +1,6 @@
-import express from 'express'
+import chalk from 'chalk'
 
-console.log("Boa Noite Fagner Fontes ")
+let message = chalk.redBright("Boa Noite: Fagner Fontes Batista")
+
+
+console.log(message);
