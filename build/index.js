@@ -1,3 +1,9 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-console.log("Boa Noite Fagner Fontes Batista ");
+const chalk_1 = __importDefault(require("chalk"));
+const message = chalk_1.default.redBright("Boa Noite: Fagner Fontes Batista");
+console.log(message);
+//# sourceMappingURL=index.js.map
