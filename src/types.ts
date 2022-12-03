@@ -10,8 +10,10 @@ export enum GENDER{
     OTHER = "OTHER"
 }
 
-export type caracter = {
+export type character = {
     id: number, 
     name: string, 
     gender: GENDER
+    discription?: string
 }
+
