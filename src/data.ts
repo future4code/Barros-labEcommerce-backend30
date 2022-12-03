@@ -1,4 +1,6 @@
-import { movie } from "./types";
+
+import { character,GENDER, movie } from "./types";
+
 
 export const movies: movie[] = [
     {
@@ -11,5 +13,15 @@ export const movies: movie[] = [
         id: 2, 
         title:"DeadPool", 
         year: 2010
+    }
+]
+
+export const characters: character[] = [
+
+    {
+        id: 1, 
+        name: "Storn", 
+        gender: GENDER.OTHER,
+        discription: "Sexy notherf***"
     }
 ]
