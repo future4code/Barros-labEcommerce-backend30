@@ -1,0 +1,19 @@
+GET http://localhost:3003/caracteres
+
+###
+
+GET http://localhost:3003/movies
+
+### 
+
+PUT http://localhost:3003/caracter
+Content-Type: application/json
+
+{
+    "name": "Tempestade", 
+    "gender": "FEMALE", 
+    "description": "Controla o tempo"
+}
+
+###
+DELETE  http://localhost:3003/character/1670118100823
