@@ -1,4 +1,4 @@
-GET http://localhost:3003/caracteres
+GET http://localhost:3306/CARACTERE
 
 ###
 
@@ -6,14 +6,18 @@ GET http://localhost:3003/movies
 
 ### 
 
-PUT http://localhost:3003/caracter
+PUT http://localhost:3306/CARACTERE
 Content-Type: application/json
 
 {
-    "name": "Tempestade", 
+    "name": "Vampira", 
     "gender": "FEMALE", 
-    "description": "Controla o tempo"
+    "description": "Suga a força vital "
 }
 
 ###
-DELETE  http://localhost:3003/character/1670118100823
+DELETE  http://localhost:3306/CARACTERE/3
+
+###
+
+GET http://localhost:3306/CARACTERE

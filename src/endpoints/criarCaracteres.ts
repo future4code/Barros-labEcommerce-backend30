@@ -18,5 +18,5 @@ export default function criarCaracteres(
         
     })
 
-    res.status(201).send()
+    res.status(201).end()
 }
