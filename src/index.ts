@@ -7,9 +7,9 @@ import getAllCaracters from "./endpoints/getAllCaracters"
 import getAllMovies from "./endpoints/getAllMovies"
 import criarCaracteres from "./endpoints/criarCaracteres"
 
-app.get("/caracteres", getAllCaracters)
+app.get("/CARACTERE", getAllCaracters)
 app.put("/caracter", criarCaracteres)
-app.delete("/character/id", deletarCaractere)
+app.delete("/CARACTERE/id", deletarCaractere)
 
 app.get("/movies", getAllMovies )
 app.delete("/movies/id", deletarMovies)

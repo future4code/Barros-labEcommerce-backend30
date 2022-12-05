@@ -1,18 +1,20 @@
 import {Request, Response} from "express"; 
 import { characters } from "../data";
+import connection from "./connections";
 
-export default function deletarCaractere(
+export default async function deletarCaractere(
     req:Request, 
     res: Response
-): void{
+):Promise <void>{
+    try{
+        const {id} = req.params
 
-    const {id} = req.params
-    
-    const index: number = characters.findIndex(
-        character => character.id === Number(id)
-    )
+        await connection("CARACTERE")
+        .delete()
+        .where({id})
 
-    characters.slice(index, 1)
-
-    res.status(200).end()
+        res.status(200).end()
+    } catch(error){
+        res.status(500).send("Erro inesperado no servidoR")
+    }
 }
