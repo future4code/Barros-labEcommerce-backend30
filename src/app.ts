@@ -16,8 +16,5 @@ app.get("/", (req, res)=>{
     
 })*/
 
-app.listen(3306, () => {
-    console.log("Servidor rodando na porta 3306");
-});
 
 export default app

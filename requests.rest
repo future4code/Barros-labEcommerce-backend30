@@ -1,23 +1,41 @@
-GET http://localhost:3306/CARACTERE
 
 ###
+GET http://localhost:3306/users
 
-GET http://localhost:3003/movies
+
+###
+GET http://localhost:3306/products
 
 ### 
-
-PUT http://localhost:3306/CARACTERE
+post http://localhost:3306/registerUsers
 Content-Type: application/json
 
 {
-    "name": "Vampira", 
-    "gender": "FEMALE", 
-    "description": "Suga a força vital "
+        "name": "ellen Fontes Batista",
+        "email": "ellengmail", 
+        "password": "785647889"
 }
 
-###
-DELETE  http://localhost:3306/CARACTERE/3
 
-###
+### 
+post http://localhost:3306/registerProdcts
+Content-Type: application/json
 
-GET http://localhost:3306/CARACTERE
+{
+        "name": "rolls royce - Mulsanne",
+        "description": "Veiculo de Luxo",
+        "price":  "4.900,000,00",
+        "image": "image.png"
+}
+
+### 
+post http://localhost:3306/purchases
+Content-Type: application/json
+
+{
+      "user_id":2, 
+      "product_id":2 , 
+      "quantity":12, 
+      "total_price": "total_price"
+    
+}
