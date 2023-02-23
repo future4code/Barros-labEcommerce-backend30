@@ -1,19 +1,41 @@
-GET http://localhost:3003/caracteres
 
 ###
+GET http://localhost:3306/users
 
-GET http://localhost:3003/movies
+
+###
+GET http://localhost:3306/products
 
 ### 
-
-PUT http://localhost:3003/caracter
+post http://localhost:3306/registerUsers
 Content-Type: application/json
 
 {
-    "name": "Tempestade", 
-    "gender": "FEMALE", 
-    "description": "Controla o tempo"
+        "name": "ellen Fontes Batista",
+        "email": "ellengmail", 
+        "password": "785647889"
 }
 
-###
-DELETE  http://localhost:3003/character/1670118100823
+
+### 
+post http://localhost:3306/registerProdcts
+Content-Type: application/json
+
+{
+        "name": "rolls royce - Mulsanne",
+        "description": "Veiculo de Luxo",
+        "price":  "4.900,000,00",
+        "image": "image.png"
+}
+
+### 
+post http://localhost:3306/purchases
+Content-Type: application/json
+
+{
+      "user_id":2, 
+      "product_id":2 , 
+      "quantity":12, 
+      "total_price": "total_price"
+    
+}

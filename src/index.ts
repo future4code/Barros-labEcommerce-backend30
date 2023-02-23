@@ -1,19 +1,30 @@
-import app from "./app"
-import deletarCaractere from "./endpoints/deletarCaractere"
-import deletarMovies from "./endpoints/deletarMovies"
+import { Request, Response } from "express";
+import app from "./app";
+import registerUsers from "./endpoints/registerUsers"
+import getUsers from "./endpoints/getUsers"
+import registerProducts from "./endpoints/registerProducts"
+import getProdcts from "./endpoints/getProducts"
+import purchases from "./endpoints/registerPurchases"
 
-//import { characters, movies } from "./data"
-import getAllCaracters from "./endpoints/getAllCaracters"
-import getAllMovies from "./endpoints/getAllMovies"
-import criarCaracteres from "./endpoints/criarCaracteres"
 
-app.get("/caracteres", getAllCaracters)
-app.put("/caracter", criarCaracteres)
-app.delete("/character/id", deletarCaractere)
+app.post("/registerUsers", registerUsers)
+app.post("/registerProdcts", registerProducts)
+app.post("/purchases", purchases)
+app.get("/users", getUsers)
+app.get("Products", getProdcts)
 
-app.get("/movies", getAllMovies )
-app.delete("/movies/id", deletarMovies)
 
+
+
+
+
+
+
+
+
+app.listen(3306, () => {
+    console.log("Servidor rodando na porta 3003");
+});
 
 
 
