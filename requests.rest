@@ -6,6 +6,11 @@ GET http://localhost:3306/users
 ###
 GET http://localhost:3306/products
 
+
+//Busca todas a compras de um determiado usuário
+###
+GET http://localhost:3306/users/:user_id/purchases
+
 ### 
 post http://localhost:3306/registerUsers
 Content-Type: application/json
@@ -33,9 +38,9 @@ post http://localhost:3306/purchases
 Content-Type: application/json
 
 {
-      "user_id":2, 
+      "user_id":1, 
       "product_id":2 , 
-      "quantity":12, 
+      "quantity":3, 
       "total_price": "total_price"
     
 }
